@@ -769,6 +769,9 @@ h5                                          { color: #595959; }
     Main Content
 ***********************/
 #main-content                               { margin-top: 10px; margin-bottom: 40px; }
+.navigation-item                            { margin-bottom: 30px; }
+.navigation-item p                          { margin-top: 0; font-size: 14px; font-weight: bold; }
+.navigation-item:hover p                    { color: #0c9; }
 
 /***********************
     Aside Section
