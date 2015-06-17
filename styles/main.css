@@ -783,6 +783,13 @@ h5                                          { color: #595959; }
 .section-navigation li .highlight           { font-weight: bold; text-transform: none; }
 .section-navigation li:hover .highlight,
 .section-navigation li.active .highlight    { color: #0c9; }
+.section-content                            { padding: 40px; background-color: #f6f6f6; }
+.section-content h2                         { margin-bottom: 30px; }
+.section-content h4                         { margin-bottom: 20px; }
+.section-content ul                         { margin-left: 10px; }
+.section-content ul li                      { margin-bottom: 20px; font-size: 14px; line-height: 28px; font-weight: 200; }
+.section-content .highlight-list            { margin-top: 30px; margin-left: 0; background: url("../img/icon_plan_activities.png") no-repeat; list-style: lower-alpha; }
+.section-content .highlight-list li         { font-weight: bold; margin-left: 100px; }
 
 /***********************
     Aside Section
