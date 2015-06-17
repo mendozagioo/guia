@@ -772,6 +772,28 @@ h5                                          { color: #595959; }
 .navigation-item                            { margin-bottom: 30px; }
 .navigation-item p                          { margin-top: 0; font-size: 14px; font-weight: bold; }
 .navigation-item:hover p                    { color: #0c9; }
+.section-navigation                         { margin-top: 40px; overflow: hidden; list-style: none; }
+.section-navigation li                      { width: 33.3333%; float: left; }
+.section-navigation li a                    { display: block; margin: 0 10px; padding-bottom: 10px; font-size: 10px; text-transform: uppercase; color: #595959; border-bottom: 3px solid #595959; }
+.section-navigation li:first-child a        { margin-left: 0; }
+.section-navigation li:last-child a         { margin-right: 0; }
+.section-navigation li:hover a,
+.section-navigation li.active a             { border-bottom-color: #0c9; }
+.section-navigation li span                 { display: block; }
+.section-navigation li .highlight           { font-weight: bold; text-transform: none; }
+.section-navigation li:hover .highlight,
+.section-navigation li.active .highlight    { color: #0c9; }
+.section-content                            { padding: 40px; background-color: #f6f6f6; }
+.section-content h2                         { margin-bottom: 30px; }
+.section-content h4                         { margin-bottom: 20px; }
+.section-content ul                         { margin-left: 10px; }
+.section-content ul li                      { margin-bottom: 20px; font-size: 14px; line-height: 28px; font-weight: 200; }
+.section-content .highlight-list            { margin-top: 30px; margin-left: 0; background: url("../img/icon_plan_activities.png") no-repeat; list-style: lower-alpha; }
+.section-content .highlight-list li         { font-weight: bold; margin-left: 100px; }
+.section-links                              { margin-top: 10px; text-align: right; }
+.section-links .btn                         { margin-right: 10px; font-weight: 200; font-size: 12px; background-color: #474747; box-shadow: none; }
+.section-links .btn.highlight               { background-color: #0c9; }
+.section-links .btn:last-child              { margin-right: 0; }
 
 /***********************
     Aside Section
