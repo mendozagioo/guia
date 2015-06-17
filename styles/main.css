@@ -751,8 +751,9 @@ a.entity-item-card:hover .entity-meta { color: #f2fcfa; }
     General Styles
 ***********************/
 .dgm-site                                   { background: #fff; font-family: "Open Sans", sans-serif; color: #595959; }
-p                                           { font-size: 16px; line-height: 28px; font-weight: 200; color: #595959; }
+p                                           { font-size: 14px; line-height: 28px; font-weight: 200; color: #595959; }
 p.intro-text                                { font-size: 13px; }
+ul.numbered                                 { list-style: decimal; }
 h2, h3                                      { font-size: 24px; color: #595959; }
 h4, h5                                      { font-size: 14px; font-weight: bold; color: #333; }
 h5                                          { color: #595959; }
