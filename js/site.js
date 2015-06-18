@@ -28,6 +28,10 @@ var Site        = {
     _setResources   : function () {
         var item    = $( '.resource-item .item' );
         item.height( item.width() );
+
+        $( '.resource-item' ).hover( function ( e ) {
+            $( '.item-hover', e.currentTarget ).slideToggle();
+        });
     }
 };
 
