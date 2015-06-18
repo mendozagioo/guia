@@ -754,6 +754,10 @@ a.entity-item-card:hover .entity-meta { color: #f2fcfa; }
 p                                           { font-size: 14px; line-height: 28px; font-weight: 200; color: #595959; }
 p.intro-text                                { font-size: 13px; }
 ul.numbered                                 { list-style: decimal; }
+ol                                          { counter-reset: item; }
+ol li                                       { display: block; }
+ol > li > ol                                { margin-left: 20px; }
+ol li:before                                { content: counters(item, ".") " "; counter-increment: item; }
 h2, h3                                      { font-size: 24px; color: #595959; }
 h4, h5                                      { font-size: 14px; font-weight: bold; color: #333; }
 h5                                          { color: #595959; }
@@ -789,10 +793,13 @@ h5                                          { color: #595959; }
 .section-navigation li.active .highlight    { color: #0c9; }
 .section-content                            { padding: 40px; background-color: #f6f6f6; }
 .section-content.intro                      { background-color: transparent; }
+.section-content table                      { width: 100%; margin-bottom: 20px; }
 .section-content h2                         { margin-bottom: 30px; }
 .section-content h4                         { margin-bottom: 20px; }
 .section-content ul                         { margin-left: 10px; }
-.section-content ul li                      { margin-bottom: 20px; font-size: 14px; line-height: 28px; font-weight: 200; }
+.section-content ol                         { margin-top: 20px; }
+.section-content ul li,
+.section-content ol li                      { margin-bottom: 20px; font-size: 14px; line-height: 28px; font-weight: 200; }
 .section-content .highlight-list            { margin-top: 30px; margin-left: 0; background: url("../img/icon_plan_activities.png") no-repeat; list-style: lower-alpha; }
 .section-content .highlight-list li         { font-weight: bold; margin-left: 100px; }
 .section-content table                      { margin-top: 20px; }
