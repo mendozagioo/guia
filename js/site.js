@@ -1,10 +1,11 @@
 var Site        = {
 
-    init        : function () {
+    init            : function () {
         Site._setHovers();
+        Site._setResources();
     },
 
-    _setHovers  : function () {
+    _setHovers      : function () {
         var item    = $( '.navigation-item .item-img' ),
             img     = $( '.navigation-item img' ),
             link;
@@ -21,6 +22,15 @@ var Site        = {
                     opacity : 1
                 }).removeClass( 'first' );
             });
+        });
+    },
+
+    _setResources   : function () {
+        var item    = $( '.resource-item .item' );
+        item.height( item.width() );
+
+        $( '.resource-item' ).hover( function ( e ) {
+            $( '.item-hover', e.currentTarget ).slideToggle();
         });
     }
 };
