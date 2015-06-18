@@ -1,0 +1,4 @@
+responsable,nombre del conjunto,¿de qué es?,¿tiene datos privados?,razón por la cuál es privada los datos,"¿en qué plataforma, tecnología, programa o sistema se albergan?",fecha estimada de publicación en datos.gob.mx (en caso de ser datos públicos) (AAAA-MM)
+ej1. DG de medio ambiente,Tipos de vegetación,El indicador muestra la superficie y el porcentaje de los tipos de vegetación natural en el país,Público,No aplica,excel,2015-06
+ej2. DG de adultos mayores,Montos Programa Adultos Mayores,Es un conjunto de datos que representa los montos otorgados por rango de edad y localidad del Programa de Pensión para Adultos Mayores,Restringido,Contiene Datos Personales,excel,2015-11
+ej3. DG de atención ciudadana,Peticiones de los ciudadanos,Peticiones que los ciudadanos hacen al Presidente,Privado,Confidencial/ Reservado/ Seguridad Nacional (en su caso incluir número de acta que lo justifica),oracle,No aplica
