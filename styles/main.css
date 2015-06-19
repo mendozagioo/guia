@@ -95,7 +95,9 @@ h5                                          { color: #595959; }
 .guide-navigation .item-publish             { background-position: 0 -20px; }
 .guide-navigation .item-perfect             { background-position: 0 -40px; }
 .guide-navigation .item-promote             { background-position: 0 -60px; }
+.guide-navigation .item-templates           { background-position: 0 -80px; }
 .guide-navigation .item-resources           { background-position: 0 -80px; }
 .guide-navigation .item-intro a,
+.guide-navigation .item-templates a,
 .guide-navigation .item-resources a         { font-weight: normal; }
 .guide-navigation li:last-child             { margin-bottom: 0; }
