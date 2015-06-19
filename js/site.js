@@ -23,6 +23,10 @@ var Site        = {
                 }).removeClass( 'first' );
             });
         });
+
+        $( '.navigation-item .item-hover' ).click( function ( e ) {
+            window.location.href    = $( 'a', $( e.currentTarget ).parent().next() ).attr( 'href' );
+        });
     },
 
     _setResources   : function () {
