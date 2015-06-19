@@ -38,7 +38,7 @@ h5                                          { color: #595959; }
 .navigation-item p                          { margin-top: 0; font-size: 14px; font-weight: bold; }
 .navigation-item .item-img                  { width: 100%; height: 100%; position: relative; }
 .resource-item .item-hover,
-.navigation-item .item-hover                { display: none; width: 100%; height: 100%; color: #fff; font-weight: 200; font-size: 14px; line-height: 28px; background-color: rgba(0,0,0,0.6); position: absolute; left: 0; bottom: 0; }
+.navigation-item .item-hover                { display: none; width: 100%; height: 100%; color: #fff; font-weight: 200; font-size: 14px; line-height: 28px; background-color: rgba(0,0,0,0.6); position: absolute; left: 0; bottom: 0; cursor: pointer; }
 .resource-item .item-hover p,
 .navigation-item .item-hover p              { padding: 10px; font-weight: 200; position: absolute; bottom: 0; }
 .resource-item .item-hover p                { bottom: 20px; }
