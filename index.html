@@ -2,28 +2,26 @@
 layout: default
 ---
 
-<div class="col col-10">
-    <div class="cols-12">
-        {% assign sorted_pages = site.pages | where:'showInSidebar',true | sort: 'weight' %}
-        {% for section in sorted_pages %}
-            {% assign loopindex = forloop.index %}
-            {% if section.title %}
-                <div class="col col-4 navigation-item">
-                    <div class="col-inner">
-                        <div class="item-img">
-                            <img src="/assets/img/{{ section.icon }}" />
-                            <div class="item-hover">
-                                {% if forloop.index == 1 %}
-                                    <p><a href="{{ section.url | prepend: site.baseurl }}">{{ section.hover_desc }}</a></p>
-                                {% else %}
-                                    <p class="link-center first"><a href="{{ section.url | prepend: site.baseurl }}">{{ section.hover_desc }}</a></p>
-                                {% endif %}
-                            </div>
+<div class="cols-12">
+    {% assign sorted_pages = site.pages | where:'showInSidebar',true | sort: 'weight' %}
+    {% for section in sorted_pages %}
+        {% assign loopindex = forloop.index %}
+        {% if section.title %}
+            <div class="col col-4 navigation-item">
+                <div class="col-inner">
+                    <div class="item-img">
+                        <img src="/assets/img/{{ section.icon }}" />
+                        <div class="item-hover">
+                            {% if forloop.index == 1 %}
+                                <p><a href="{{ section.url | prepend: site.baseurl }}">{{ section.hover_desc }}</a></p>
+                            {% else %}
+                                <p class="link-center first"><a href="{{ section.url | prepend: site.baseurl }}">{{ section.hover_desc }}</a></p>
+                            {% endif %}
                         </div>
-                        <p><a href="{{ section.url | prepend: site.baseurl }}">{{ section.home_link }}</a></p>
                     </div>
+                    <p><a href="{{ section.url | prepend: site.baseurl }}">{{ section.home_link }}</a></p>
                 </div>
-            {% endif %}
-        {% endfor %}
-    </div>
+            </div>
+        {% endif %}
+    {% endfor %}
 </div>
