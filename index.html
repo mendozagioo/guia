@@ -6,16 +6,21 @@ layout: default
     <div class="cols-12">
         {% assign sorted_pages = site.pages | where:'showInSidebar',true | sort: 'weight' %}
         {% for section in sorted_pages %}
+            {% assign loopindex = forloop.index %}
             {% if section.title %}
                 <div class="col col-4 navigation-item">
                     <div class="col-inner">
                         <div class="item-img">
                             <img src="/assets/img/{{ section.icon }}" />
                             <div class="item-hover">
-                                <p class="link-center first"><a href="{{ section.url | prepend: site.baseurl }}">{{ section.hover_desc }}</a></p>
+                                {% if forloop.index == 1 %}
+                                    <p><a href="{{ section.url | prepend: site.baseurl }}">{{ section.hover_desc }}</a></p>
+                                {% else %}
+                                    <p class="link-center first"><a href="{{ section.url | prepend: site.baseurl }}">{{ section.hover_desc }}</a></p>
+                                {% endif %}
                             </div>
                         </div>
-                        <p><a href="{{ section.hover_desc }}">{{ section.home_link }}</a></p>
+                        <p><a href="{{ section.url | prepend: site.baseurl }}">{{ section.home_link }}</a></p>
                     </div>
                 </div>
             {% endif %}
