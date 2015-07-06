@@ -27,6 +27,7 @@ h5                                          { color: #595959; }
 .info-title                                 { font-size: 24px; color: #595959; }
 .breadcrumb                                 { height: 50px; }
 .breadcrumb a                               { line-height: 60px; }
+.breadcrumb a span                          { text-transform: capitalize; }
 
 /***********************
     Main Content
