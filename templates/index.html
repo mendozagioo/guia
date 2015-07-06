@@ -13,3 +13,26 @@ home_link: Manuales y Plantillas
 active: all
 templates_category: true
 ---
+
+<div class="cols-12">
+    {% assign posts = site.posts | where: 'section', 'templates' | where: 'published', true | sort: 'order' %}
+    {% for post in posts %}
+        <div class="col col-4 resource-item">
+            <div class="col-inner">
+                <div class="item">
+                    <p>{{ post.title }}</p>
+                    {% if post.content %}
+                        <div class="item-hover">
+                            {% if post.hover_link %}
+                                <p><a href="{{ post.hover_link | prepend: site.baseurl }}">{{ post.content }}</a></p>
+                            {% else %}
+                                <p><a href="{{ post.document | prepend: site.baseurl }}">{{ post.content }}</a></p>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                </div>
+                <a href="{{ post.document | prepend: site.baseurl }}" class="btn btn-download">Descargar Plantilla</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
