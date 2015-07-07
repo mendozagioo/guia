@@ -17,7 +17,7 @@
             {% if words != 0 %}
                 {% capture post %}{{ full_url | truncatewords: 1 | remove: '...' }}{% endcapture %}
                 {% if post != ' ' %}
-                    <a href="{{ post | prepend : '/' | prepend : section | prepend : '/' | prepend : site.baseurl }}">/ <span>{{ page.title }}</span></a>
+                    <a href="{{ post | prepend : '/' | prepend : section | prepend : '/' | prepend : site.baseurl }}">/ {{ page.title }}</a>
                 {% endif %}
             {% endif %}
         </div>
