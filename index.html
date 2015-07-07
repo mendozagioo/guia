@@ -10,7 +10,7 @@ layout: default
             <div class="col col-4 navigation-item">
                 <div class="col-inner">
                     <div class="item-img">
-                        <img src="/assets/img/{{ section.icon }}" />
+                        <img src="{{ "/assets/img/" | append: section.icon | prepend: site.baseurl }}" />
                         <div class="item-hover">
                             {% if forloop.index == 1 %}
                                 <p><a href="{{ section.url | prepend: site.baseurl }}">{{ section.hover_desc }}</a></p>
