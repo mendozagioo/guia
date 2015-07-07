@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html class="dgm-site">
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+        <main id="main-content" tabindex="-1" role="main" aria-label="Contenido principal">
+            <div class="main-container">
+                {% include breadcrumb.html %}
+                <div class="cols-12">
+                    {% include sidebar.html %}
+                    <div class="col col-10">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% include footer.html %}
+    </body>
+</html>
