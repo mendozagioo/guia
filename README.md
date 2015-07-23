@@ -7,3 +7,22 @@ Los datos abiertos del gobierno son un activo público usable y reutilizable por
 
 ## Sugerencias
 Te invitamos a que nos retroalimentes sobre esta propuesta. Para comentarios utilizamos [GitHub Issues](https://github.com/mxabierto/guia/issues), para propuestas y sugerencias envíanos un [pull request](https://help.github.com/articles/creating-a-pull-request "More Information on Submitting Pull Requests").
+
+## Colaboración
+###### Requisitos
+Este sitio está hecho con [GitHub Pages](https://pages.github.com/) y [Jekyll](http://jekyllrb.com/).
+Para poder correr el sitio es necesario tener instalado `jekyll`.
+```
+% gem install jekyll
+```
+
+###### Clonar repositorio
+El sitio integra un submódulo de Git para el contenido, así que al momento de clonar el repositorio te recomendamos hacerlo de la siguiente forma
+```
+% git clone --recursive
+```
+
+###### Correr Sitio
+```
+% bundle exec jekyll serve --watch --config _config-local.yml
+```
