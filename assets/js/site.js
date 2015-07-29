@@ -39,4 +39,4 @@ var Site        = {
     }
 };
 
-$( 'document' ).ready( Site.init );
+$( window ).load( Site.init );
