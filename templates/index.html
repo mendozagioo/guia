@@ -21,12 +21,13 @@ templates_category: true
             <div class="col-inner">
                 <div class="item">
                     <p>{{ post.title }}</p>
-                    {% if post.content %}
+                    {% assign content = post.content | strip_newlines %}
+                    {% if content != "" %}
                         <div class="item-hover">
                             {% if post.hover_link %}
-                                <p><a href="{{ post.hover_link | prepend: site.baseurl }}">{{ post.content }}</a></p>
+                                <p><a href="{{ post.hover_link | prepend: site.baseurl }}">{{ content }}</a></p>
                             {% else %}
-                                <p><a href="{{ post.document | prepend: site.baseurl }}">{{ post.content }}</a></p>
+                                <p><a href="{{ post.document | prepend: site.baseurl }}">{{ content }}</a></p>
                             {% endif %}
                         </div>
                     {% endif %}
