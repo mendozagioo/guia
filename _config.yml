@@ -2,9 +2,9 @@
 title: Guía de Datos Abiertos para México
 email: hola@datos.gob.mx
 baseurl: "/guia"
-url: "http://mxabierto.github.io"
+url: "http://mendozagioo.github.io"
 twitter_username: jekyllrb
-github_username:  mxabierto
+github_username:  mendozagioo
 
 # Build settings
 markdown: kramdown
