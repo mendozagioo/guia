@@ -24,5 +24,5 @@ El sitio integra un submódulo de Git para el contenido, así que al momento de 
 
 ###### Correr Sitio
 ```
-% bundle exec jekyll serve --watch --config _config-local.yml
+% bundle exec jekyll serve --watch --config _config.local.yml
 ```
