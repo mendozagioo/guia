@@ -1,3 +1,4 @@
 [submodule "_posts"]
 	path = _posts
 	url = https://github.com/mxabierto/guia-content.git
+	branch = guia-2017
